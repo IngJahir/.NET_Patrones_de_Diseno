@@ -1,0 +1,27 @@
+﻿PATRON ITERADOR
+---------------
+-> Provee un mecanismo para acceder a los elementos de una coleccion (estructura de datos)
+   de forma secuencial sin tener que conocer cómo está estructructurada
+-> Tambien puede filtrar los datos de la coleccion 
+-> Los iteradores y numeradores trabajan de cerca 
+-> Un enumerador es responsable de producir el siguiente elemento de una secuencia dependiendo
+   de un criterio en particular
+-> Esa seceuncia se dice que es enumerable
+-> El iterador es el mecanismo por medio del cual recorremos esta secuencia de inicio a fin
+-> C# provee al foreach y es el que implementaremos
+
+PARTES IMPORTANTES
+------------------
+-> IEnumerator: Interfaz que define al enumerador
+-> IEnumerable: Interfaz que indica que esa clase puede ser usada por el iterador
+
+USOS
+-----
+-> Cuando deseamos separar el proceso de iteracion del de enumerador
+-> Cuando la estructura es compleja 
+-> cuando hay posibles cambios de la coleccion
+-> Cuando se requieren diversas iteraciones sobre la coleccion, posiblemente al mismo tiempo
+-> El mismo tipo de iteracion se puede aplicar a diferentes datos
+
+
+VOLVER A REVISAR EN DETALLE ESTE PATRON !!!!!

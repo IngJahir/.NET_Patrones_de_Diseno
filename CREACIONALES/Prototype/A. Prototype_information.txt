@@ -1,0 +1,40 @@
+﻿PATRON PROTOTYPE
+----------------
+-> Crea objetos nuevos al clonar a prototipos ya existentes
+-> Agiliza la instancia de clases grandes
+-> Mantiene un registro de los objetos copiados
+-> Esconde las clases de las que fueron creadas
+
+-> La creacion del objeto es por clonacion y no por instanciacion 
+-> Se repite cuantas veces sea necesario
+-> Se puede adicionar en tiempo de ejecuacion 
+-> Es bueno tener un administrador de prototipos que tenga una
+   lista de los prototipos disponibles.
+
+PARTES IMPORTANTES
+------------------
+
+-> IPrototipo: Define la interfaz que indica que el prototipo es clonable
+-> AdminPrototipo: Clase que tiene la capacidad de hacer clones, tiene la lista
+-> Prototipo: Clase que puede ser clonada
+-> Cliente: Adiciona prototipos a la lista y pide clones
+
+USOS
+----
+-> Se usa cuando la instancia es costosa y la clonacion barta
+-> Si el constructor es muy pesado, este patron es buena opcion
+-> Necesitamos tener una version del objeto que no debe alterarse
+   (prototipo) y otras que si cambien de estado
+-> Esconder del cliente la clase de la cual surgen los objetos
+-> Para sustituir al patron fabrica si fuera necesario
+-> Calculos pesados que se necesitan hacer, los hacemos una vez y 
+   luego los clonamos
+-> Se puede usar cuando se crea la instancia o cuando la instancia 
+   ya ha sido creada
+
+CUIDADO !!!
+-----------
+-> Clases que tengan referencias circulares a otras clases no pueden ser clonadas
+-> Si tenemos acceso al codigo de la clase, no se puede implementar Clone() de forma directa
+   y es necesario realizar clases intermedias
+-> Verificar que el clonado sea mas barato que la instanciacion.

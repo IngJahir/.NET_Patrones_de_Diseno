@@ -1,0 +1,28 @@
+﻿PATRON COMANDO
+---------------
+-> Crea una separacion entre quien hace la peticion y quien la lleva a cabo
+-> Este patron puede:
+   * Enviar peticiones a varios receptores
+   * Componer transacciones complejas a partir de operaciones primitivas
+   * Llevar a cabo Undo y Redo
+-> Se puede implementar de forma normal o con delegados
+
+PARTES IMPORTANTES
+------------------
+-> Comando: Clase quecominca al cliente con los receptores
+-> Invoker: Crea la distancia entre el cliente y el receptor y le pide al 
+   Comando que lleve a cabo la accion
+-> Cliente : Invoca ejecutar en el InvoKer y la peticion llega al Comando, de ahí 
+   a la accion en el Receptor
+-> IComando: Interfaz que especifica la operacion Ejecutar
+-> Receptor: La clase que lleva a cabo la accion 
+-> Ejecutar: La operacion que necesita ser llevada a cabo
+
+CUANDO USARLO
+-------------
+-> Cuando necesitamos que diferentes receptores lleven a cabo el comando de forma diferente
+-> Cuendo los comandos de alto nivel son implementados por operaciones primitivas 
+-> Cuando es necesario especificar y ejecutar comandos en momentos especificos
+-> Cuando se necesita llevar a cabo un Undo
+-> Llevar a cabo un registro de los comandos que se han realizado.
+

@@ -1,0 +1,36 @@
+﻿PATRON FLYWEIGHT
+----------------
+-> Permite compartir informacion que se encuentra en pequeños objetos que existen en grandes cantidades
+-> Ayuda a reducir las necesidades de almacenamiento
+-> El patron distingue entre dos estados que pueden tener el objeto:
+
+   -> Intrinseco: Se puede compartir a gran escala, disminuye el almacenamiento 
+   -> Extrinseco: El estado se calcula en el momento
+
+   El estado intrinseco no aparece pues se calcula en tiempo de ejecucion, segun es necesario a partir 
+   del estado intrensico 
+
+-> El estado "no compoartido" o "unshared" es el conjunto de grupos a los que pertenece 
+
+ELEMENTOS PRINCIPALES
+---------------------
+-> Cliente: Es el que mantiene el estado no compartido y colecciones de Flyweight
+-> IFlyweight: La interfaz por medio de la cual los Flyweights pueden recibir o actuar sobre un estado intrinsico
+-> FlyweightFactory: Administra a los objetos Flyweight y garantiza que solo un valor es creado
+-> Flyweight: Guarda el estado intrinseco que se comparte a todos los objetos
+
+EJERCICIO
+---------
+            ------------------------------------------------
+            |   CARNES     |    SOPAS   |    ENSALADAS     |
+------------------------------------------------------------
+| Americana | Hamburguesa  |            | Wisconsin chesse |
+------------------------------------------------------------
+| Italiana  |              | Minestrone | Antipasto        |
+------------------------------------------------------------
+| Mexicana  | T. al pastor | Coditos    | Nopales          |
+------------------------------------------------------------
+
+------------------------------------------------
+| Rapida  | Hamburguesa | T. al pastor | Pizza |
+------------------------------------------------

@@ -1,0 +1,19 @@
+﻿PATRON SINGLETON
+----------------
+-> Garantiza que solo exista una instancia de una clase que pueda existir
+-> Crea un punto global de acceso para ese objeto
+-> La clase se instancia solo una vez
+-> La misma clase, al implementar este patron garantiza eso.
+
+PARTES IMPORTANTES
+------------------
+-> Singleton: La clase que contiene lo necesario para solo producir una instacia de si mismo
+-> ObtenInstancia: Metodo que permite obtener la instancia unica
+
+USOS
+----
+-> Cuando necesitamos garantizar que exista una sola instancia de la clase (antivirus, conexion a BBDD, impresora, administrador de ventas)
+-> Si usamos otros patrones de los que requerimos solo una instancia como: Fachada, Prototipo, Builder o Fabrica
+-> Cuando se necesita controlar el acceso a la instancia
+-> El control debe de permacer en la clase de instancia y no en otro mecanismo 
+-> Crear una excepcion si se intenta instancia mas de una vez la clase 

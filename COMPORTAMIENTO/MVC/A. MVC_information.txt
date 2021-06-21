@@ -1,0 +1,10 @@
+﻿PARTES IMPORTANTES
+------------------
+-> Model: * Datos
+          * Logica de negocios que describe como se usan los datos
+
+-> View:  * Interfaz del usuario
+          * Despliega al modelo
+
+-> Controller: * Se encarga de la entrada del usario
+               * Actua sobre el modelo para generar la vista

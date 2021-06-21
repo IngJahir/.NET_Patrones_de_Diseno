@@ -1,0 +1,26 @@
+﻿PATRON FACADE
+----------------
+-> Tenemos un sistema compuesto de varios subsistemas y este patron nos permite tener una vista de alto nivel 
+-> Simplifica el control de los subsistemas y la interfaz hacia los mismos
+-> No solo simplifica, tambien ayuda a esconder el detalle de los subsistemas
+-> Se puede tener varias fachadas a la vez
+
+VARIACIONES
+-----------
+-> Opaco: Los subsistemas se pueden acceder por medio del objeto fachada 
+-> Transparente: Los subsistemas se pueden acceder via la fachada o directamente
+-> Estatica: La clase fachada se crea a partir de una clase estatica por lo que no es necesario instanciarla
+
+ELEMENTOS PRINCIPALES
+---------------------
+-> Subsistema n: Clase o clases que proveen determinada funcionalidad 
+-> Fachada: La clase que provee las operaciones de alto nivel 
+-> Cliente: Usa la fachada para llamar a las operaciones de alto nivel
+
+Usualmente se usan diferentes namespaces para los subsitemas y el cliente 
+
+CUANDO USARLO
+-------------
+
+DESVENTAJAS
+------------

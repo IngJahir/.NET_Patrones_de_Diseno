@@ -1,0 +1,27 @@
+﻿PATRON CADENA DE RESPONSABILIDAD
+--------------------------------
+-> Se tiene una serie de objetos que funcionan como handlers
+-> Se genera una peticion y se manda al primer objeto, si no se puede llevar 
+   a cabo, entonces es pasada al siguiente y asi sucesivamente. 
+-> Si ningun objeto pudo llevar a cabo la peticion hay un comportamiento de 
+   default o de excepcion
+-> Para poder maneajar la peticion es necesario que el objeto tenga recursos, 
+   conocimientos y permisos. El objeto entonces decide si lleva a cabo la +ç
+   peticion o no 
+-> Nos da flexibilidad en la asignacion de handlers
+
+PARTES IMPORTANTES
+------------------
+-> Tenemos una interfaz que se implementa por los handlers y ellos tienen una 
+   referencia al siguiente en la cadena 
+-> Cliente: La clase que inicia la peticion 
+-> IHandler: La interfaz comun para todos los handlers
+-> HandlerN: La clase que implementa al handler 
+-> Sucesor: Referencia al siguiente handler
+
+CUANDO USARLO
+-------------
+-> Cuando se tiene mas de un handler por peticion
+-> Cuando hay razones para que un handler pase la peticion a alguien mas
+-> Se tenga un grupo de handlers que varien de forma dinamica
+

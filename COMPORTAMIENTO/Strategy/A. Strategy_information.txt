@@ -1,0 +1,23 @@
+﻿PATRON ESTRATEGIA
+-----------------
+-> Se forma con una familia de Algoritmos que estan encapsulados
+-> El cliente selecciona que algoritmo utilizar
+-> El objetivo es hacer esos algoritmos intercambiables y usar el
+   mejor para cada caso
+-> Si tenemos un programa que provee una funcionalidad, pero existen
+   varias formas de llevarlo a cabo, se puede usar el estrategia
+-> Puede hacerse via herencia o con implementacion de interfaz
+
+PARTES IMPORTANTES
+------------------
+-> Contexto: Clase que contienen la informacion de contexto sobre el 
+   cual trabajan los algoritmos
+-> IEstrategia: Define la interfaz comun a todas las estrategias 
+   (Algoritmos)
+-> Estrategia n:  Implementacion de un algoritmo en particular
+
+USOS
+-----
+-> Salvar archivos en diferentes formatos
+-> Compresion con diferentes algoritmos
+-> Formas de representar informacion (Graficas)

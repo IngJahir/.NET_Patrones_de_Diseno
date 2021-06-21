@@ -1,0 +1,25 @@
+﻿PATRON METODO TEMPLATE
+----------------------
+-> Permite que los pasos de un algoritmo sean ejecutados por clases
+-> La estructura del algoritmo no cambia, pero podemos hacer que ciertas partes
+   sean ejutadas en otra parte
+-> Cuando necesitamos definir que pasos del algoritmo son fijos y cuales puden 
+   ejecutarse de diferentes formas
+-> Los pasos que no cambian se implementan en la clase directamente
+-> Los pasos que pueden variar se les puede crear una implementacion de default
+-> Se usa mucho en los frameworks
+
+PARTES IMPORTANTES
+------------------
+-> Algoritmo: La clae que incluye el metodo Template
+-> MetodoTemplate: El metodo que define algunas partes de la operacion y delega 
+   a las otras clases
+-> IPrimitiva: La interfaz que define la operacion que ha sido delegada
+-> Clase N:Cualqueir cosa que implementa la interfaz IPrimitiva
+-> Operacion: Metodo que se necesita para completar la operacion 
+
+USOS
+-----
+-> Cuando el proceso va a ser definido a partir de un algoritmo y el comportamiento
+   de los pasos puede variar dependiendo de las clases que usen 
+

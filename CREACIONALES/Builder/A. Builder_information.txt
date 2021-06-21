@@ -1,0 +1,32 @@
+﻿PATRON BUILDER
+--------------
+-> Separa la especificacion de un objeto complejo de su construccion.
+-> El mismo proceso de construccion puede crear diferentes representaciones.
+-> Se basa en directores y constructores
+-> Los Constructores son llamados por el director para crear un producto de acuerdo a una especificacion e implementacion a IConstructor.
+-> El constructor provee partes que se acumulan hasta que el director finaliza
+-> Diferentes constructores pueden proveer diferentes partes
+-> Pueden existir diferentes directores y constructores
+-> El producto mantiene una lista de partes segun se va creando
+-> La lista es el resultado del proceso de construccion
+
+PARTES IMPORTANTES
+------------------
+-> IConstructor: Interfaz que define que puede construirse
+-> Director: Secuencia de operaciones que se siguen para crear un producto
+-> Constructor: Clase invocada por el Director para crear las partes del producto
+-> Producto: Objeto bajo construccion
+
+VENTAJAS
+--------
+-> Los productos no necesariamente son iguales
+-> El Builder puede redefinir como trabaja y aun con el mismo Director crear diferentes productos
+-> Hasta que no finaliza la construccion el objeto no es regresado
+
+USOS
+----
+-> Se usa en aplicaciones que crean estruccturas complejas
+-> Generalmente el resultado es un objeto compuesto
+-> Se usa cuando el algoritmo para crear partes es independiente de las partes mismas
+-> El objeto a crear tiene diferentes implementaciones
+-> Cuando se necesita tener un control preciso del proceso de construccion.

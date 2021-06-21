@@ -1,0 +1,27 @@
+﻿PATRON ADAPTER
+--------------
+-> Ayuda a que dos clases que no fueron diseñadas para trabajar juntas lo puedan hacer
+-> Si las interfacer difieren, el adaptador permite que se puedan comunicar
+-> Muy util para trabajar con codigo viejo, toolkits, librerias.
+-> Existen diferentes tipos de adaptadores
+
+
+PARTES IMPORTANTES
+------------------
+-> ITarget: La interfaz que el cliente conoce y espera usar
+-> Adaptado: La implementacion que debe ser adaptada
+-> Adaptador: La clase que implementa ITarget para poder trabajar con el adaptado
+-> Peticion: La operacion que el cliente desea
+-> Peticion especifica: La implementacion de la peticion en el adaptado
+
+ADAPTER TWO-WAYS
+-----------------
+-> Cuando dos sistemas necesitan usar las caracteristicas del otro y viceversa
+-> Una clase adaptador se usa para poveer la adaptacion a ambos.
+
+PLUGABLE
+--------
+-> Identificamos tempranamente las partes del sistema que van a cambiar
+-> Las interfaces pequeñas aumentan las posibilidades de que nuevos sistemas se puedan conectar
+-> Una caracteristica es que el nombre que incvoca el cliente pueda ser diferente del que se 
+   encuentra en ITarget, esto se puede hacer por delegados

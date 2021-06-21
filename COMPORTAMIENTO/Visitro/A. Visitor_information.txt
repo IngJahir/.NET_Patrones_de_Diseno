@@ -1,0 +1,22 @@
+﻿PATRON VISITANTE
+----------------
+-> Define y lleva a cabo nuevas operaciones en los elementos de una estructura sin alterar sus clases
+-> Definimos la estructura y luego la visitamos para llevar a cabo las operaciones
+
+PARTES IMPORTANTES
+------------------
+-> Se compone de dos partes:
+   * Clases que toman la estructura
+   * Metodos que seran aplicados a la estructura (Visitantes)
+-> Cliente: La clase que crea la estructura y la llena de datos
+-> Estructura de objetos: Una estructura compuesta de objetos relacionados
+-> Elemento: El elemento raiz de la estructura
+-> ElementoN: Subclase del elemento 
+-> IVisitor: Interfaz para la clase visitante
+-> VisitanteN: Clases que contienen los metodos que iteran a la estructura y aplican las operaciones
+
+USOS
+-----
+-> Se usa cuando se necesita extender un comportamiento
+-> Se usa en compiladores y sistemas grandes de software que utilizan arboles 
+-> Se necesitan diferentes operaciones en diferentes tipos de elementos

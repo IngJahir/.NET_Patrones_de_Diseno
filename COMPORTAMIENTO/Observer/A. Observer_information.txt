@@ -1,0 +1,32 @@
+﻿PATRON OBSERVADOR
+-----------------
+-> Define una relacion entre objetos
+-> Cuando uno cambia su estado, los demas son notificados
+-> Generalmente se tiene un solo sujeto y varios observadores
+-> El sujeto lleva a cabo ciertos procesos, cuando cambia su 
+   estado, entonces informa a los observadores
+-> El observador recibe una notificacion del cambio de estado
+   y hace algo al respecto
+-> El observador puede vincularse / desvincularse cuando lo
+   desee
+-> El mensaje enviadio no necesariamente tiene que ser texto,
+   puede ser del tipo que sea necesario
+-> En el modelo Push se envia todo lo relacionado con cambio de
+   estado
+-> En el modelo Pull solo se informa que hay un cambio de estado
+   y el observador que este interersado pide la informacion   
+
+PARTES IMPORTANTES
+------------------
+-> Sujeto: La clase que cuando cambia su estado, notifica.
+-> IObservador: La interfaz que los observadores deben de implementar 
+   para recibir notificaciones
+-> Observador: La clase que espera la notificacion del sujeto
+-> Update: El metodo con el que reciben la notificacion
+-> Notificar: El metodo que envia la notificacion 
+
+USOS
+-----
+-> Los cambios de un objeto necesitan ser propagados a otros objetos,
+   quizas no a todos.
+-> El objeto que envia los cambios no necesita conocer a los receptores

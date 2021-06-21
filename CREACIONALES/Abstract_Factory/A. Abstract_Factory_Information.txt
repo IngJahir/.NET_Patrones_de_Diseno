@@ -1,0 +1,19 @@
+﻿PATRON ABSTRACT FACTORY
+-----------------------
+-> Se encarga de la instanciacion de objetos relacionados sin el uso de subclases
+-> Crea familia de objetos relacionados o dependientes, esto quiere decir que los objetos deben de producirse juntos
+-> La fabrica abstracta se refina en fabricas concretas que producen diferentes objetos en diferentes combinaciones
+-> Permite que el cliente se independiente de como los productos son creados e implementados
+
+PARTES IMPORTANTES
+------------------
+-> IFabricaAbstracta: Interfaz con las operaciones de creacion de los productos abstractos
+-> FabricaN: Implementa las operaciones de creacion de la fabrica abstracta
+-> IProductoAbstracto: Interfaz del tipo de producto con sus comportamientos
+-> ProductoN: Clases que implementan a ProductoAbstracto
+
+USOS
+----
+-> El sistema debe ser independiente de como los productos son creados
+-> El sistema puede utilizar una de varias familias de productos
+-> El sistema necesita que los productos forzosamente se creen en familias

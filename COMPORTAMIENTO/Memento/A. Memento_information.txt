@@ -1,0 +1,21 @@
+﻿PATRON RECUERDO
+---------------
+-> Se usa para capturar el estado interno de un objeto y salvarlo de forma externa
+   para restaurarlo despues.
+
+PARTES IMPORTANTES
+------------------
+-> Originador: * Provee soporte a los objetos que seran salvados
+               * Decide que tanto del estado se necesita salvar
+-> Memento: Se encarga de hacer el salvado
+-> CareTaker: * Registra los diferentes estados salvados
+              * Guarda los mementos
+
+USOS
+-----
+-> Se usa para salvar el estado en calculos que toman mucho tiempo
+-> En videojuegos para autosave
+-> Cuando necesitamos salvar y luego restaurar el estado de un objeto
+-> Cuando no deseamos mostrar el estado directamente
+
+VOLVER A REVISAR EN DETALLE ESTE PATRON !!!!!

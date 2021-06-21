@@ -1,0 +1,19 @@
+﻿PATRON FACTORY METHOD
+---------------------
+-> Permite crear objetos, pero deja las subclases decidir que clase instanciar
+-> Se decide la clase a instanciar basandose en la informacion que provee el cliente
+
+PARTES IMPORTANTES
+------------------
+-> IProducto: Interfaz para los productos
+-> ProductoN: Clase que implementa a IProducto
+-> Creador: Provee el metodo de fabrIca
+-> MetodoFabrica: Decide que clase instanciar
+
+USOS
+----
+-> Ayuda a crear independencia de las clases al programar hacia una interfaz y no una clase concreta
+-> Se usa cuando es importante tener flexibilidad y se necesita por alguna razon seleccionar una clase sobre otra
+-> Cuando una clase no puede anticipar que tipo de objeto debe crear 
+-> Una clase usa a subclases para especificar que objeto crear
+-> Necesitamos tener un lugar especifico donde se encuentre el conocimiento de como crear las clases

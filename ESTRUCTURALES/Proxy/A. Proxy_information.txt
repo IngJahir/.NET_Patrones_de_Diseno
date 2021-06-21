@@ -1,0 +1,33 @@
+﻿PATRON PROXY
+------------
+-> Da soporte a un objetos que controlan la creacion y el acceso a otros objetos.
+   Es un punto intermedio entre el cliente y esos objetos que son activados cuando 
+   se cumplen con determinados requisitos
+-> Un ejemplo puede ser el mecanismo para registrarse y hacer login a un sitio web.
+   No se tiene acceso a determinados objetos hasta que el usuario no este registrado
+   y lleve a cabo el login de forma correcta
+-> Otro uso es representar a un objeto que toma tiempo o recursos en crearse, de esta
+   forma el cliente piensa que esta comunicado con el objeto, mientras el proxy decide 
+   la creacion cuando sea realmente necesaro. Es decir, diferenciamos la instanciacion 
+   del momento real de su uso.
+-> Si un calculo lleva mucho tiempo en realizarse, podemos usar el proxy para mostrar 
+   resultados intermedios
+-> ADO .NET hace uso del proxy para llevar a cabo la conectividad con la base de datos
+
+ELEMENTOS PRINCIPALES
+---------------------
+-> ISujeto: Interfaz comun de los proxy y sujetos. Esto permite usarlos e intercambiarlos
+   cuando sea necesario
+-> Sujeto: La clase que es representada por el proxy, la clase que deseamos usar una vez 
+   que el proxy no los permita
+-> Proxy: La clase que crea, controla y da acceso al sujeto 
+-> Peticion:  Una operacion en el sujeto que es enviada via el proxy
+
+TIPOS DE PROXY
+--------------
+-> Virtual: Da la creacion de un objeto a otro 
+-> Autentificacion: Verifica que los permisos de acceso sean los adecuados
+-> Remoto: Codifica las peticiones y las envia por red
+-> Smart: Adiciona o modifica las peticiones antes de enviarlas
+
+

@@ -1,0 +1,22 @@
+﻿PATRON BRIDGE
+-------------
+-> Desacopla la implementacion de la abtraccion 
+-> Se usa cuando surge una nueva version del software pero lo anterior aun se va a seguir usando por el cliente
+-> Protege de cambi al cliente, ya que se codigo no cambia, pues trabaja con una abstraccion y no un codigo concreto
+-> El cliente indicara con que version va a trabajar 
+-> Una interfaz provee el mecanismo de entrada a las diferentes implementaciones de la abstraccion 
+-> Hace que la interfaz de una o mas clases parezcan que tienen la de una clase en particular
+
+VENTAJAS
+--------
+-> Permite que la interfaz del cliente permanezca constante sin importar los cambios que tenga la abtraccion,
+-> Con esto evitamos recompilar al cliente, solo tenemos que recompilar el bridge y las implementaciones necesarias
+-> Esconde las implementaciones del cliente
+
+PARTES IMPORTANTES
+------------------
+-> Abstraccion: La interfaz que el cliente ve y conoce
+-> Operacion: El metodo que invoca el cliente
+-> IBridge: La interfaz que muestra los comportamientos que pueden variar en la abtraccion 
+-> Implementacion n: Las diferentes implementaciones de la abstrccion 
+-> OpercionImp: El metodo que implementa la operacion.

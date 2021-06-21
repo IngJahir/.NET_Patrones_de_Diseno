@@ -1,0 +1,34 @@
+﻿PATRON ESTADO
+-------------
+-> Es una implementacion de la Maquina de Estados finitos
+-> Alguno lo ven como una implementacion dinamica del patron estrategia
+-> Cuando el estado del objeto cambia, cambia el comportamiento 
+-> Presenta interaccion entre el Contexto y el Estado
+-> El contexto representa la informacion que rara vez cambia
+-> El Estado puede cambiar entre las opciones que hay segun se ejecuta el
+   programa
+-> Podemos implementar con dos opciones: todos los estados existen al 
+   iniciar o se instancia segun sea necesario
+-> Para decidir debemos considerar que tan frecuente se cambia el estado
+   y el costo de instanciar
+
+PARTES IMPORTANTES
+------------------
+-> Contexto: Una clase que tiene instancia del Estado y la interfaz que 
+             espera el cliente.
+-> IEstado: Define la interfaz para un estado en particular qu puede 
+   tener el Contexto
+-> EstadoN: Clases que implementan los estados concretos
+
+VENTAJAS
+--------
+-> La transicion entre los estados es explicita
+-> La transicion es muy rapida, pues solo se asigna la referencia
+-> No hay inconsistencias con el contexto
+
+USOS
+----
+-> Cuando se necesita cambiar el comportamiento en tiempo de ejecucion,
+   segun el contexto.
+-> Cuando los objetos se vuelven complejos con diferentes opciones de 
+   comportamiento.

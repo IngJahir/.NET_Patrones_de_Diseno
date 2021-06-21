@@ -1,0 +1,28 @@
+﻿PATRON MEDIADOR
+---------------
+-> El patron mediador permite que objetos se comuniquen sin conocer la identidad de cada uno
+-> Encapsula el protocolo que usan los objetos
+-> El contenido de los mensajes puede ser vetado por un moderador
+-> Cada mediador tiene una lista de colegas
+-> Se puede tener mas de un mediador, cada uno con su propio moderador, lista de suscritos, etc
+
+PARTES IMPORTANTES
+------------------
+-> Colega: * El coloega se registra con el mediador y le permite un metodo recibir
+		   * Enviar peticiones a otros colegas por medio del mediador 
+-> Mediador: Envia el mesaje a todos los colegas registrados por medio de un delegado de respuesta
+-> IColega: Interfaz que define a los colegas
+
+USOS
+-----
+-> Donde sea necesario tener un protocolo de enviar/recibir
+-> Cuando es necesario centralizar la interconexion entre objetos
+-> Es neceasario que los objetos se comuniquen de forma bien estructurada 
+-> Es necesario proteger las identidades de los objetos
+-> Es necesario agrupar la comunicacion de los objetos
+
+DESVENTAJAS
+-----------
+-> Puede dar problema de desempeño al ir la comunicacion por el mediador
+
+VOLVER A REVISAR EN DETALLE ESTE PATRON !!!!!

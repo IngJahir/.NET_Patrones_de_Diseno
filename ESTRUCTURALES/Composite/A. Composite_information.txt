@@ -1,0 +1,30 @@
+﻿PATRON COMPOSITE
+----------------
+-> Nos permite crear jerarquias estructuradas con componentes sencillos o grupos de componentes,
+   a los que se les pueden aplicar las mismas operaciones (Estructura tipica de arbol)
+-> El componente puede ser un objeto sencillo o una colleccion de otros componetes
+-> Las operaciones mas comunes son: adicionar, remover, agrupar, buscar 
+-> Se utiliza donde necesitamos tener a los elementos de forma organizada o jerarquica
+-> Trabajamos con dos tipos de elementos: El elemento y el compuesto
+-> Ambos tipos de elementos tienen una interfaz en comun
+-> Permite adicionar nuevos tipos de componentes siempre y cuando implementen a la interfaz
+-> Los reproductores de audio o video que nos permite organizar en album o lista de reproduccion
+-> Se utiliza en Model-View-Controller
+-> En Win-Formd es utilizado, el form es un contenedor de otros controles
+
+VARIACIONS
+----------
+-> Orden: Los elementos son organizados
+-> Cache: Si un valor se calcula constantemente a partir de los hijos, puede guardarse en el 
+   padre para no tener que calcularlo constantemente
+
+ELEMNETOS PRINCIPALES
+---------------------
+-> IComponente: Interfaz que representa los comportamientos que seran comunes a todos los 
+   objetos de la composicion 
+-> Operacion: Metodo que lleva a cabo la operacion que esperamos en un elemento de la composicion
+-> Componente: Representa un objeto sencillo que no se puede descomponer mas e implementa las 
+   operaciones segun su caso
+-> Compuesto: Implementa las operaciones trabajando con una coleccion de componentes
+
+ESTUDIARLO NUEVAMENTE !!!!!!!

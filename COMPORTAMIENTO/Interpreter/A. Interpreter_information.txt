@@ -1,0 +1,34 @@
+﻿PATRON INTERPRETE
+-----------------
+-> Interpreta una instruccion escrita en un lenguaje o notacion con un fin especifico
+-> La notacion debe ser precisa
+-> Un interprete de XML puede ser un ejemplo del uso de este patron
+
+GRAMATICA
+---------
+-> Podemos crear una gramatica propia 
+-> Indicamos cuales son los terminos
+-> Es necesario colocar reglas de interpretacion 
+-> Evitar ambigüedades
+
+PARSING
+-------
+-> El patron interprete no especifica como la estructura de objeto es creada
+-> Este proceso se conoce como parsing y compara la entrada contra la gramatica 
+   para crear un parse tree.
+
+PARTES IMPORTANTES
+------------------
+-> Cliente: La clase que construye una estructura que representa la gramatica 
+-> Contexto: Una clase que contiene la informnacion a usarse por el Interprete(I/O)
+-> ExpresionAbstracta: Clase abstracta que provee una interfaz para las clases de la 
+   estructura y la operacion del interprete
+-> NoTerminal: Una clase que implementa el interprete y puede contener otros terminos
+-> Terminal: Una clase que implementa el interprete.
+
+CUANDO USARLO
+-------------
+-> Cuando hay que interpretar una gramatica sencilla
+-> La eficiencia no es critica
+-> Hay herramientas de parseo diferentes
+
